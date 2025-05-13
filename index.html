@@ -4,68 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Strength Therapy by Cory Ginther</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Your Custom Styles -->
   <link rel="stylesheet" href="index.css" />
 </head>
-<body>
-  <header>
-    <div class="container">
-      <h1 class="logo">Strength Therapy PT</h1>
+<body class="bg-dark text-white">
+
+  <!-- Header -->
+  <header class="border-bottom border-danger bg-black py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="assets/IMG_0542.JPEG" alt="Logo" class="logo" />
       <nav>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="hero">
+  <!-- Hero Section -->
+  <section id="hero" class="text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="hero-content">
-      <img src="assets/Cory.jpeg" alt="Cory Ginther" class="profile-photo" />
-      <h2>Golf Performance & Sports Therapy</h2>
-      <p>Enhancing strength, flexibility, and performance — one swing at a time.</p>
-      <a href="#contact" class="btn">Book a Session</a>
+      <img src="assets/Cory.jpeg" alt="Cory Ginther" class="profile-photo mb-4" />
+      <h2 class="display-5">Golf Performance & Sports Therapy</h2>
+      <p class="lead text-light">Enhancing strength, flexibility, and performance — one swing at a time.</p>
+      <a href="booking.html" class="btn btn-danger mt-3">Book a Session</a>
     </div>
   </section>
-  
 
-  <section id="services">
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-black">
     <div class="container">
-      <h2>Our Services</h2>
-      <div class="services-grid">
-        <div class="service">
-          <h3>Golf Performance Training</h3>
-          <p>Improve swing mechanics, core strength, and range of motion.</p>
+      <h2 class="text-center mb-5 text-white">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service p-4 h-100 bg-dark border-start border-danger rounded">
+            <h3 class="text-danger">Golf Performance Training</h3>
+            <p>Improve swing mechanics, core strength, and range of motion.</p>
+          </div>
         </div>
-        <div class="service">
-          <h3>Sports Therapy</h3>
-          <p>Recovery treatments for sports injuries and chronic pain.</p>
+        <div class="col-md-4">
+          <div class="service p-4 h-100 bg-dark border-start border-danger rounded">
+            <h3 class="text-danger">Sports Therapy</h3>
+            <p>Recovery treatments for sports injuries and chronic pain.</p>
+          </div>
         </div>
-        <div class="service">
-          <h3>1-on-1 Coaching</h3>
-          <p>Personalized performance programs tailored to your goals.</p>
+        <div class="col-md-4">
+          <div class="service p-4 h-100 bg-dark border-start border-danger rounded">
+            <h3 class="text-danger">1-on-1 Coaching</h3>
+            <p>Personalized performance programs tailored to your goals.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Cory Ginther</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Strength Therapy by Cory Ginther. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="bg-black text-center py-3 border-top border-danger">
+    <p class="mb-0">&copy; 2025 Strength Therapy by Cory Ginther. All rights reserved.</p>
   </footer>
 
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
   <script src="index.js"></script>
 </body>
 </html>

@@ -24,9 +24,8 @@ body {
   }
   
   .logo {
-    color: #d10000;
-    font-size: 1.8rem;
-    font-weight: bold;
+    height: 60px;
+    width: 60px;
   }
   
   nav ul {
@@ -51,13 +50,45 @@ body {
   }
   
   /* Hero Section */
-  #hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438') center/cover;
-    height: 90vh;
+  
+#hero {
+    position: center;
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    height: 100vh;
+    overflow: hidden;
   }
+
+  #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Foreground content */
+  #hero {
+    background-image: url('assets/D1STgym\ copy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff; /* optional */
+  }
+
+  .content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 20vh;
+  font-size: 2rem;
+}
   
   .hero-content {
     width: 100%;
