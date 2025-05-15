@@ -1,69 +1,83 @@
+/* ==============================
+   Base Styles
+============================== */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #1e1e1e, #3a3a3a);
-    color: #fff;
-  }
-  
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1e1e1e, #3a3a3a);
+  color: #fff;
+}
+
+/* ==============================
+   Booking Container
+============================== */
+.booking-container {
+  max-width: 800px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.booking-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.booking-container p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+/* ==============================
+   Buttons & Links
+============================== */
+.btn {
+  display: inline-block;
+  background-color: #00c896;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #009e77;
+}
+
+a.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: #aaa;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+a.back-link:hover {
+  color: #fff;
+}
+
+/* ==============================
+   Calendly Widget
+============================== */
+.calendly-inline-widget {
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ==============================
+   Responsive Adjustments
+============================== */
+@media (max-width: 600px) {
   .booking-container {
-    max-width: 800px;
-    margin: 60px auto;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px;
-    border-radius: 12px;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    padding: 20px;
   }
-  
-  .booking-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .booking-container p {
-    font-size: 1.1em;
-    margin-bottom: 30px;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #00c896;
-    color: #fff;
-    padding: 12px 24px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1em;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #009e77;
-  }
-  
-  .calendly-inline-widget {
-    margin-top: 30px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  a.back-link {
-    display: inline-block;
-    margin-top: 30px;
-    color: #aaa;
-    text-decoration: underline;
-    transition: color 0.3s;
-  }
-  
-  a.back-link:hover {
-    color: #fff;
-  }
-  
-  @media (max-width: 600px) {
-    .booking-container {
-      padding: 20px;
-    }
-  }
-  
+}

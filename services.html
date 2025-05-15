@@ -6,17 +6,19 @@
   <title>Our Services</title>
 
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS Animation Library (Optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="index.css" />
 </head>
-<body>
+<body class="bg-dark text-white">
 
   <!-- Header -->
-  <header>
-    <div class="container d-flex justify-content-between align-items-center py-3">
+  <header class="border-bottom border-danger bg-black py-3">
+    <div class="container d-flex justify-content-between align-items-center">
       <img src="assets/IMG_0542.JPEG" alt="Logo" class="logo" />
       <nav>
         <ul class="nav">
@@ -36,7 +38,7 @@
       <div class="row g-4">
 
         <!-- Card 1 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
           <div class="card bg-dark text-white border-danger h-100">
             <img src="assets/personal-training.jpg" class="card-img-top" alt="Personal Training">
             <div class="card-body">
@@ -47,7 +49,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
           <div class="card bg-dark text-white border-danger h-100">
             <img src="assets/recovery-tools.jpg" class="card-img-top" alt="Recovery Tools">
             <div class="card-body">
@@ -58,7 +60,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
           <div class="card bg-dark text-white border-danger h-100">
             <img src="assets/online-coaching.jpg" class="card-img-top" alt="Online Coaching">
             <div class="card-body">
@@ -72,32 +74,51 @@
     </div>
   </section>
 
-  <!-- Media Section (Videos / Pictures) -->
-  <section class="py-5 bg-black">
+<!-- Media Section -->
+<section class="py-5 bg-black">
     <div class="container">
-      <h3 class="text-white mb-4 text-center">Featured Media</h3>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
+      <h3 class="text-white mb-4 text-center">In Action: Video & Photo Highlights</h3>
+  
+      <div class="row g-4 justify-content-center">
+  
+        <!-- Video Example -->
+        <div class="col-md-6" data-aos="fade-up">
           <video class="w-100 rounded border border-danger" autoplay muted loop playsinline>
-            <source src="assets/online-coaching.mp4" type="video/mp4" />
+            <source src="assets/golf-training.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <p class="text-center mt-2">Golf Performance Drill</p>
         </div>
+  
+        <!-- Image Example -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/stretching.jpg" alt="Stretching Session" class="img-fluid rounded border border-danger" />
+          <p class="text-center mt-2">Client Recovery Stretch Session</p>
+        </div>
+  
+        <!-- Add more as needed -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/group-training.jpg" alt="Group Training" class="img-fluid rounded border border-danger" />
+          <p class="text-center mt-2">Small Group Strength Training</p>
+        </div>
+  
       </div>
-
-      <!-- Add more images or videos below as needed -->
     </div>
   </section>
+  
 
   <!-- Footer -->
-  <footer class="text-center py-3 bg-dark text-white border-top border-danger">
+  <footer class="text-center py-3 bg-black text-white border-top border-danger">
     <p class="mb-0">&copy; 2025 Strength Therapy PT. All rights reserved.</p>
   </footer>
 
   <!-- Bootstrap JS Bundle -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
