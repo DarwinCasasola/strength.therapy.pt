@@ -12,8 +12,9 @@ body {
    Booking Container
 ============================== */
 .booking-container {
-  max-width: 800px;
-  margin: 60px auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
   background: rgba(255, 255, 255, 0.05);
   padding: 40px;
   border-radius: 12px;
@@ -62,6 +63,13 @@ a.back-link {
 
 a.back-link:hover {
   color: #fff;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
 
 /* ==============================
