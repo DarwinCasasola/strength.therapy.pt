@@ -1,6 +1,13 @@
 /* ==============================
    Base Styles
 ============================== */
+@media (max-width: 576px) {
+  .logo {
+    max-width: 120px;
+    height: auto;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
